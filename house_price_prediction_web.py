@@ -97,7 +97,7 @@ Dataset: https://www.kaggle.com/amaanafif/chennai-house-price \n
 Select the location, builder, area, number of rooms and bathrooms and click Predict Price.""")
 
 if st.button('Predict Price'):
-    filename = '/Users/carlosperezricardo/Desktop/house_price_prediction_model.sav'
+    filename = './house_price_prediction_model.sav'
     model = pickle.load(open(filename, 'rb'))
 
     # Construct the dataframe to predict
